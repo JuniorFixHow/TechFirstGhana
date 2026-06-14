@@ -1,65 +1,145 @@
-import Image from "next/image";
+import { CtaBand } from "@/app/_components/sections/CtaBand";
+import { SectionHeader } from "@/app/_components/sections/SectionHeader";
+import { ServiceGrid } from "@/app/_components/sections/ServiceGrid";
+import { SiteShell } from "@/app/_components/layout/SiteShell";
+import { ButtonLink } from "@/app/_components/ui/ButtonLink";
+import { VisualPanel } from "@/app/_components/ui/VisualPanel";
+import { brand } from "@/lib/site-data";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <SiteShell activePath="/">
+      <section className="hero hero-light">
+        <div className="container hero-grid">
+          <div>
+            <span className="pill">Trusted by 500+ Corporate Partners</span>
+            <h1>Technology Solutions That Drive Business Growth</h1>
+            <p>
+              Scale your operations with precision-engineered software, cloud
+              infrastructure, and strategic IT consulting designed for the modern enterprise.
+            </p>
+            <div className="hero-actions">
+              <ButtonLink href="/contact-us">Get Started</ButtonLink>
+              <ButtonLink href="/contact-us" variant="secondary">
+                Book a Consultation
+              </ButtonLink>
+            </div>
+          </div>
+          <VisualPanel variant="office" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section split-section">
+        <div className="container split-grid">
+          <div className="image-card">
+            <VisualPanel variant="dashboard" />
+            <div className="float-card">
+              <strong>12+ Years</strong>
+              <span>Of Excellence in IT Innovation</span>
+            </div>
+          </div>
+          <div>
+            <span className="eyebrow">Who We Are</span>
+            <h2>Strategic Partners in Your Digital Transformation</h2>
+            <p>
+              {brand.name} is not just a service provider; we are an extension of your business.
+              We bridge the gap between complex technological challenges and high-performance
+              business outcomes through architectural stability and rigorous innovation.
+            </p>
+            <ul className="check-list">
+              <li>Data-driven strategy and architectural precision</li>
+              <li>Agile development cycles for rapid deployment</li>
+              <li>Continuous support and infrastructure monitoring</li>
+            </ul>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section pale">
+        <div className="container">
+          <SectionHeader
+            title="Our Core Expertise"
+            text="From enterprise software to cloud migrations, we provide the technical foundation for scalable success."
+          />
+          <ServiceGrid />
+        </div>
+      </section>
+
+      <section className="trust-band">
+        <div className="container trust-grid">
+          <div>
+            <h2>Why Leading Companies Trust {brand.shortName}</h2>
+            <p>
+              We bring a unique blend of corporate discipline and startup agility to every project,
+              ensuring your tech stack is an asset, not a liability.
+            </p>
+            <div className="mini-grid">
+              <div>
+                <strong>Rock-Solid Security</strong>
+                <span>Enterprise-grade protection integrated into every layer.</span>
+              </div>
+              <div>
+                <strong>Rapid Innovation</strong>
+                <span>Faster time-to-market without compromising quality.</span>
+              </div>
+            </div>
+          </div>
+          <div className="metric-stack">
+            <div>
+              <strong>98%</strong>
+              <span>Client Retention</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Managed Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeader
+            title="Our Strategic Roadmap"
+            text="A systematic approach to transforming your vision into high-performance reality."
+          />
+          <div className="roadmap">
+            {["Consultation", "Architecture", "Development", "Testing", "Launch"].map(
+              (step, index) => (
+                <div key={step}>
+                  <span>{index + 1}</span>
+                  <strong>{step}</strong>
+                  <p>
+                    {index === 0
+                      ? "Deep dive into goals and pain points."
+                      : "Focused execution with transparent reporting."}
+                  </p>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className="section pale">
+        <div className="container">
+          <SectionHeader title="What Our Partners Say" />
+          <div className="testimonial-grid">
+            {["Marcus Thorne", "Elena Rodriguez", "David Chen"].map((name) => (
+              <article className="testimonial-card" key={name}>
+                <p>
+                  “{brand.name} transformed our legacy systems into a modern cloud foundation.
+                  Their precision is unmatched.”
+                </p>
+                <strong>{name}</strong>
+                <span>Technology Leader</span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CtaBand />
+    </SiteShell>
   );
 }
