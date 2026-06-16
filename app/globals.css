@@ -147,6 +147,14 @@ textarea {
   color: var(--purple);
 }
 
+.btn-outline {
+  background: transparent;
+  border-color: var(--navy);
+  border-width: 1px;
+  color: var(--white);
+  font-weight: lighter;
+}
+
 .btn-dark {
   background: var(--navy);
   color: var(--white);
@@ -231,11 +239,24 @@ textarea {
 
 .visual-panel {
   position: relative;
-  min-height: 275px;
+  height: 275px;
   overflow: hidden;
   border-radius: 8px;
   background: linear-gradient(135deg, #d8edf4, #0b2839 66%);
   box-shadow: 0 18px 40px rgba(9, 28, 47, 0.16);
+}
+
+.visual-image {
+  position: relative;
+  width: 100%;
+  /* min-height: 275px; */
+  height: 100%;
+}
+
+.visual-img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
 }
 
 .visual-chrome {
@@ -284,16 +305,16 @@ textarea {
   content: "";
   position: absolute;
   inset: 58px 34px 42px;
-  background:
+  /* background:
     linear-gradient(90deg, #28b7d7 18%, transparent 18% 24%, #28b7d7 24% 45%, transparent 45% 52%, #28b7d7 52%),
-    linear-gradient(#25a9c7, #25a9c7);
+    linear-gradient(#25a9c7, #25a9c7); */
   background-size: 100% 12px, 100% 90px;
   background-repeat: repeat-y, no-repeat;
   opacity: 0.5;
 }
 
 .visual-phone {
-  min-height: 190px;
+  max-height: 50%;
   background: linear-gradient(145deg, #eef8ff, #0e5169);
 }
 
@@ -710,7 +731,7 @@ textarea {
 
 .service-detail-grid {
   display: grid;
-  grid-template-columns: 1.18fr 0.82fr;
+  grid-template-columns: 0.82fr 1.18fr;
   gap: 26px;
 }
 
@@ -733,6 +754,11 @@ textarea {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.purple-panel .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--white);
+}
+
 .outline {
   border-color: #82adff;
 }
@@ -741,7 +767,18 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 260px;
   gap: 32px;
+  align-items: start;
   background: #dceaff;
+}
+
+.blue-panel .visual-panel {
+  min-height: auto;
+  height: 320px;
+}
+
+.blue-panel .tag-row span {
+  background: #fde8ec;
+  color: #d1476a;
 }
 
 .tag-row {

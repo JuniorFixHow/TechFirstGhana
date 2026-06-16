@@ -19,10 +19,10 @@ export default function WhyChooseUsPage() {
             </p>
             <div className="hero-actions">
               <ButtonLink href="/contact-us" variant="light">Schedule Strategy Call</ButtonLink>
-              <ButtonLink href="#methodology" variant="secondary">View Methodology</ButtonLink>
+              <ButtonLink href="#methodology" variant="outline">View Methodology</ButtonLink>
             </div>
           </div>
-          <VisualPanel variant="dashboard" />
+          <VisualPanel variant="warehouse" path="why" />
         </div>
       </section>
 
@@ -52,7 +52,7 @@ export default function WhyChooseUsPage() {
 
       <section className="section pale">
         <div className="container case-card">
-          <VisualPanel variant="warehouse" />
+          <VisualPanel variant="warehouse" path="warehouse" />
           <div>
             <span className="eyebrow">Featured Work</span>
             <h2>Global Logistics App</h2>

@@ -3,7 +3,7 @@ import Link from "next/link";
 type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "light" | "dark";
+  variant?: "primary" | "secondary" | "light" | "dark" | "outline";
 };
 
 export function ButtonLink({ href, children, variant = "primary" }: ButtonLinkProps) {

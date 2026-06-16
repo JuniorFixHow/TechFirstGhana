@@ -23,7 +23,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="container split-grid">
           <div className="image-card">
-            <VisualPanel variant="office" />
+            <VisualPanel variant="office" path="about" />
             <div className="float-card">Since 2026<br />Building the digital foundation</div>
           </div>
           <div>

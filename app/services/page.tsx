@@ -18,7 +18,7 @@ export default function ServicesPage() {
             </p>
             <ButtonLink href="#services">View All Services →</ButtonLink>
           </div>
-          <VisualPanel variant="office" />
+          <VisualPanel variant="office" path="services" />
         </div>
       </section>
 
@@ -49,7 +49,8 @@ export default function ServicesPage() {
             <article className="service-detail outline">
               <span className="icon-chip">☁</span>
               <h3>Microsoft 365 &amp; Cloud</h3>
-              <p>Azure migration, Microsoft 365 optimization, and hybrid cloud management.</p>
+              <p>Complete ecosystem integration. We specialize in Azure migration, Microsoft 365 optimization, and hybrid cloud management for secure remote collaboration.</p>
+              <div className="tag-row"><span>Azure Migration</span><span>SharePoint</span><span>Cloud Mgmt</span></div>
               <ButtonLink href="/contact-us" variant="dark">Request a Quote</ButtonLink>
             </article>
             <article className="service-detail blue-panel">
@@ -57,9 +58,10 @@ export default function ServicesPage() {
                 <span className="icon-chip purple">▯</span>
                 <h3>Mobile App Development</h3>
                 <p>Native and cross-platform mobile experiences with intuitive UX and high performance.</p>
+                <div className="tag-row"><span>iOS Native</span><span>Android</span><span>Flutter</span></div>
                 <ButtonLink href="/contact-us">Request a Quote</ButtonLink>
               </div>
-              <VisualPanel variant="phone" />
+              <VisualPanel variant="phone" path="phone" />
             </article>
           </div>
         </div>
@@ -88,7 +90,7 @@ export default function ServicesPage() {
             </ol>
           </div>
           <div className="dashboard-card">
-            <VisualPanel variant="dashboard" />
+            <VisualPanel variant="dashboard" path="visualization" />
             <div className="progress-line"><span /></div>
           </div>
         </div>

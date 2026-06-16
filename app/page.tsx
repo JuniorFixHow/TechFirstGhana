@@ -25,14 +25,14 @@ export default function Home() {
               </ButtonLink>
             </div>
           </div>
-          <VisualPanel variant="office" />
+          <VisualPanel variant="office" path="office" /> 
         </div>
       </section>
 
       <section className="section split-section">
         <div className="container split-grid">
           <div className="image-card">
-            <VisualPanel variant="dashboard" />
+            <VisualPanel variant="dashboard" path="home2" />
             <div className="float-card">
               <strong>12+ Years</strong>
               <span>Of Excellence in IT Innovation</span>
