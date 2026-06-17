@@ -2,8 +2,13 @@ import { ContactForm } from "@/app/_components/forms/ContactForm";
 import { SiteShell } from "@/app/_components/layout/SiteShell";
 import { VisualPanel } from "@/app/_components/ui/VisualPanel";
 import { brand } from "@/lib/site-data";
-import { BsGrid3X3 } from "react-icons/bs";
+import { BsFillGlobeAmericasFill, BsGrid3X3 } from "react-icons/bs";
 import { CiMail, CiPhone } from "react-icons/ci";
+import { IoShareSocial, IoShieldCheckmarkOutline } from "react-icons/io5";
+import Iconer from "../_components/ui/Iconer";
+import Link from "next/link";
+import { MdKeyboardCommandKey } from "react-icons/md";
+import { HiOutlineCommandLine } from "react-icons/hi2";
 
 export default function ContactPage() {
   return (
@@ -53,10 +58,15 @@ export default function ContactPage() {
               </div>
               <hr />
               <h3>Follow Our Innovation</h3>
-              <div className="social-circles"><span>⌘</span><span>▻</span><span>⌯</span><span>◎</span></div>
+              <div className="social-circles">
+                <Link className='rounded-full p-2 border border-white mt-1'  target='_blank' href={'/'} ><MdKeyboardCommandKey color="white" size={24} /></Link>
+                <Link className='rounded-full p-2 border border-white mt-1'  target='_blank' href={'/'} ><HiOutlineCommandLine  color="white" size={24} /></Link>
+                <Link className='rounded-full p-2 border border-white mt-1'  target='_blank' href={'/'} ><IoShareSocial  color="white" size={24} /></Link>
+                <Link className='rounded-full p-2 border border-white mt-1'  target='_blank' href={'/'} ><BsFillGlobeAmericasFill  color="white" size={24} /></Link>
+              </div>
             </aside>
             <div className="reliability-card">
-              <span className="icon-chip">◇</span>
+              <Iconer className='h-8 w-16' ><IoShieldCheckmarkOutline color='#86367E' /></Iconer>
               <p><strong>Reliability Guaranteed</strong>We respond to enterprise inquiries within 12 business hours.</p>
             </div>
           </div>

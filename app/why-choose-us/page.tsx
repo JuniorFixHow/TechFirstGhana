@@ -4,6 +4,11 @@ import { SiteShell } from "@/app/_components/layout/SiteShell";
 import { ButtonLink } from "@/app/_components/ui/ButtonLink";
 import { VisualPanel } from "@/app/_components/ui/VisualPanel";
 import { brand } from "@/lib/site-data";
+import { RiLightbulbFlashFill } from "react-icons/ri";
+import Iconer from "../_components/ui/Iconer";
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { LuCircleGauge } from "react-icons/lu";
+import { FaUsers } from "react-icons/fa";
 
 export default function WhyChooseUsPage() {
   return (
@@ -19,7 +24,7 @@ export default function WhyChooseUsPage() {
             </p>
             <div className="hero-actions">
               <ButtonLink href="/contact-us" variant="light">Schedule Strategy Call</ButtonLink>
-              <ButtonLink href="#methodology" variant="outline">View Methodology</ButtonLink>
+              <ButtonLink href="#methodology" variant="outline" className='text-white border-white' >View Methodology</ButtonLink>
             </div>
           </div>
           <VisualPanel variant="warehouse" path="why" />
@@ -33,10 +38,25 @@ export default function WhyChooseUsPage() {
             text="Our systematic approach ensures that every line of code serves a strategic business purpose."
           />
           <div className="advantage-grid">
-            <article className="advantage wide"><span className="icon-chip">●</span><h3>Innovation</h3><p>We engineer the future using AI integration and cloud-native architectures.</p><div className="tag-row"><span>AI-First</span><span>Cloud Native</span></div></article>
-            <article className="advantage purple-panel"><span className="icon-chip">◇</span><h3>Reliability</h3><p>Enterprise-grade protocols ensure stable delivery for every deployment.</p></article>
-            <article className="advantage"><span className="icon-chip">▣</span><h3>Scalability</h3><p>Modular systems expand from MVP to global scale without technical debt.</p></article>
-            <article className="advantage"><span className="icon-chip">♟</span><h3>Client-Centered</h3><p>We operate as an extension of your team at every milestone.</p></article>
+            <article className="advantage wide">
+              <Iconer ><RiLightbulbFlashFill /></Iconer>
+              <h3>Innovation</h3>
+              <p>We engineer the future using AI integration and cloud-native architectures.</p>
+              <div className="tag-row"><span>AI-First</span><span>Cloud Native</span></div>
+              </article>
+            <article className="advantage purple-panel">
+              <Iconer className="bg-white/10" ><IoShieldCheckmarkOutline color="white" /></Iconer>
+              <h3>Reliability</h3>
+              <p>Enterprise-grade protocols ensure stable delivery for every deployment.</p>
+            </article>
+            <article className="advantage">
+              <Iconer><LuCircleGauge /></Iconer>
+              <h3>Scalability</h3><p>Modular systems expand from MVP to global scale without technical debt.</p>
+            </article>
+            <article style={{background:'#EFF4FF'}} className="advantage">
+              <Iconer className="bg-white" ><FaUsers /></Iconer>
+              <h3>Client-Centered</h3><p>We operate as an extension of your team at every milestone.</p>
+            </article>
           </div>
         </div>
       </section>

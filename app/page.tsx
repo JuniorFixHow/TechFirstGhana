@@ -5,6 +5,8 @@ import { SiteShell } from "@/app/_components/layout/SiteShell";
 import { ButtonLink } from "@/app/_components/ui/ButtonLink";
 import { VisualPanel } from "@/app/_components/ui/VisualPanel";
 import { brand } from "@/lib/site-data";
+import { MdOutlineShield } from "react-icons/md";
+import { LuCircleGauge } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -74,11 +76,13 @@ export default function Home() {
               ensuring your tech stack is an asset, not a liability.
             </p>
             <div className="mini-grid">
-              <div>
+              <div className='flex flex-col gap-2' >
+                <MdOutlineShield color='white' />
                 <strong>Rock-Solid Security</strong>
                 <span>Enterprise-grade protection integrated into every layer.</span>
               </div>
-              <div>
+              <div className='flex flex-col gap-2' >
+                <LuCircleGauge color='white' />
                 <strong>Rapid Innovation</strong>
                 <span>Faster time-to-market without compromising quality.</span>
               </div>

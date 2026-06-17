@@ -149,7 +149,7 @@ textarea {
 
 .btn-outline {
   background: transparent;
-  border-color: var(--navy);
+  border-color: var(--white);
   border-width: 1px;
   color: var(--white);
   font-weight: lighter;

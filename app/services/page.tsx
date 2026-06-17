@@ -3,6 +3,10 @@ import { SectionHeader } from "@/app/_components/sections/SectionHeader";
 import { ButtonLink } from "@/app/_components/ui/ButtonLink";
 import { VisualPanel } from "@/app/_components/ui/VisualPanel";
 import { brand } from "@/lib/site-data";
+import { GrTechnology } from "react-icons/gr";
+import { IoIosCheckmarkCircleOutline, IoIosCloudOutline } from "react-icons/io";
+import { IoCode, IoPhonePortraitOutline } from "react-icons/io5";
+import Iconer from "../_components/ui/Iconer";
 
 export default function ServicesPage() {
   return (
@@ -30,7 +34,7 @@ export default function ServicesPage() {
           />
           <div className="service-detail-grid">
             <article className="service-detail large">
-              <span className="icon-chip purple">‹›</span>
+              <span className="icon-chip purple"><IoCode color="white" /></span>
               <h3>Software &amp; Web Development</h3>
               <p>
                 We craft robust web applications and custom software architectures using modern
@@ -40,14 +44,27 @@ export default function ServicesPage() {
               <ButtonLink href="/contact-us">Request a Quote</ButtonLink>
             </article>
             <article className="service-detail purple-panel">
-              <span className="icon-chip">⌘</span>
+              <span className="icon-chip"><GrTechnology /></span>
               <h3>IT Consulting</h3>
               <p>Strategic roadmap planning and infrastructure auditing aligned to long-term growth.</p>
-              <ul><li>Digital Transformation</li><li>Infrastructure Audit</li><li>Security Strategy</li></ul>
-              <ButtonLink href="/contact-us" variant="secondary">Request a Quote</ButtonLink>
+              <div className="flex flex-col gap-1.5">
+                <div className="flex gap-1 items-center">
+                  <IoIosCheckmarkCircleOutline color="white" size={18} />
+                  <span>Digital Transformation</span>
+                </div>
+                <div className="flex gap-1 items-center">
+                  <IoIosCheckmarkCircleOutline color="white" size={18} />
+                  <span>Infrastructure Audit</span>
+                </div>
+                <div className="flex gap-1 items-center">
+                  <IoIosCheckmarkCircleOutline color="white" size={18} />
+                  <span>Security Strategy</span>
+                </div>
+                <ButtonLink className='w-fit' href="/contact-us" variant="secondary">Request a Quote</ButtonLink>
+              </div>
             </article>
             <article className="service-detail outline">
-              <span className="icon-chip">☁</span>
+              <Iconer><IoIosCloudOutline color='#86367E' /></Iconer>
               <h3>Microsoft 365 &amp; Cloud</h3>
               <p>Complete ecosystem integration. We specialize in Azure migration, Microsoft 365 optimization, and hybrid cloud management for secure remote collaboration.</p>
               <div className="tag-row"><span>Azure Migration</span><span>SharePoint</span><span>Cloud Mgmt</span></div>
@@ -55,7 +72,7 @@ export default function ServicesPage() {
             </article>
             <article className="service-detail blue-panel">
               <div>
-                <span className="icon-chip purple">▯</span>
+                <span className="icon-chip purple"><IoPhonePortraitOutline color="white" /></span>
                 <h3>Mobile App Development</h3>
                 <p>Native and cross-platform mobile experiences with intuitive UX and high performance.</p>
                 <div className="tag-row"><span>iOS Native</span><span>Android</span><span>Flutter</span></div>

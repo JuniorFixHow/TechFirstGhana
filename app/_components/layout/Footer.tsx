@@ -1,5 +1,8 @@
 import { brand, footerLinks } from "@/lib/site-data";
 import { Logo } from "@/app/_components/ui/Logo";
+import Link from "next/link";
+import { IoShareSocial } from "react-icons/io5";
+import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
 
 export function Footer() {
   return (
@@ -29,9 +32,9 @@ export function Footer() {
             {brand.email}
           </p>
           <div className="footer-icons" aria-label="Social links">
-            <span>⌯</span>
-            <span>✉</span>
-            <span>⌕</span>
+            <Link href={'/'} target='_blank'><IoShareSocial color="white" size={24} /></Link>
+            <Link href={'/'} target='_blank'><MdOutlineEmail color="white" size={24} /></Link>
+            <Link href={'/'} target='_blank'><MdOutlineCall  color="white" size={24} /></Link>
           </div>
         </div>
       </div>

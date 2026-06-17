@@ -1,7 +1,8 @@
 import { SiteShell } from "@/app/_components/layout/SiteShell";
 import { SectionHeader } from "@/app/_components/sections/SectionHeader";
 import { VisualPanel } from "@/app/_components/ui/VisualPanel";
-import { brand } from "@/lib/site-data";
+import { brand, pillers } from "@/lib/site-data";
+import Iconer from "../_components/ui/Iconer";
 
 export default function AboutPage() {
   return (
@@ -74,14 +75,11 @@ export default function AboutPage() {
             The fundamental values that drive every decision we make and every product we build.
           </p>
           <div className="pillar-grid">
-            {["Innovation", "Integrity", "Excellence"].map((pillar) => (
-              <article className="service-card" key={pillar}>
-                <span className="icon-chip">⌖</span>
-                <h3>{pillar}</h3>
-                <p>
-                  We pursue reliable, future-ready technology with transparent communication and
-                  operational discipline.
-                </p>
+            {pillers.map((pillar) => (
+              <article className="service-card" key={pillar.title}>
+                <Iconer>{pillar.icon}</Iconer>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.text}</p>
               </article>
             ))}
           </div>

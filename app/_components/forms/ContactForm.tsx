@@ -3,6 +3,7 @@
 import { sendEmail } from "@/lib/actions/contact.action";
 import { ContactActionState } from "@/types/Types";
 import { useActionState, useEffect, useRef } from "react";
+import { CiPaperplane } from "react-icons/ci";
 
 const initialState: ContactActionState = { success: false, message: "" };
 
@@ -51,8 +52,8 @@ export function ContactForm() {
         Message
         <textarea name="message" placeholder="How can we help your business thrive?" required />
       </label>
-      <button disabled={pending} type="submit">
-        {pending ? "Sending..." : "Send Message ▷"}
+      <button className='flex items-center justify-center gap-2.5' disabled={pending} type="submit">
+        {pending ? "Sending..." : "Send Message "} <CiPaperplane color='white' />
       </button>
       {state.message ? (
         <p className={state.success ? "form-status success" : "form-status"}>{state.message}</p>

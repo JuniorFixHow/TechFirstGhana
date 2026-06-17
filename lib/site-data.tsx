@@ -1,3 +1,9 @@
+import { CiCloudOn, CiGlobe } from "react-icons/ci";
+import { IoMdCode } from "react-icons/io";
+import { IoPhonePortraitOutline, IoShieldCheckmarkOutline, IoTrophyOutline } from "react-icons/io5";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { SlBulb } from "react-icons/sl";
+
 export const brand = {
   name: "TechFirst Ghana",
   shortName: "TechFirst",
@@ -14,36 +20,54 @@ export const navItems = [
   { href: "/contact-us", label: "Contact Us" },
 ];
 
+export const pillers = [
+  {
+    title: "Innovation",
+    icon: <SlBulb color="#86367E" />,
+    text: "We don't follow trends; we set them. Our R&D investment ensures we're always exploring the next frontier of digital capability."
+  },
+  {
+    title: "Integrity",
+    icon: <IoShieldCheckmarkOutline color="#86367E" />,
+    text: "Trust is our currency. We maintain absolute transparency in our processes, pricing, and project management."
+  },
+  {
+    title: "Excellence",
+    icon: <IoTrophyOutline color="#86367E" />,
+    text: "Near-perfect is not enough. We strive for architectural precision and operational flawless in every deployment."
+  }
+]
+
 export const services = [
   {
     title: "Software Dev",
     text: "Custom enterprise solutions engineered for scalability, security, and performance.",
-    icon: "<>",
+    icon: <IoMdCode />,
   },
   {
     title: "Web Dev",
     text: "High-performance web applications built with modern frameworks and intuitive UX.",
-    icon: "◎",
+    icon: <CiGlobe />,
   },
   {
     title: "Mobile App",
     text: "Native and cross-platform mobile experiences that engage users on every screen.",
-    icon: "▯",
+    icon: <IoPhonePortraitOutline />,
   },
   {
     title: "Microsoft 365",
     text: "Maximize productivity with seamless cloud integration and specialized workplace tools.",
-    icon: "▦",
+    icon: <LuLayoutDashboard />,
   },
   {
     title: "Cloud",
     text: "Secure, flexible infrastructure designed to scale alongside your business growth.",
-    icon: "☁",
+    icon: <CiCloudOn />,
   },
   {
     title: "IT Consulting",
     text: "Expert guidance to navigate the evolving technology landscape and optimize your roadmap.",
-    icon: "⌖",
+    icon: <SlBulb />,
   },
 ];
 
