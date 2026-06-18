@@ -13,16 +13,25 @@ export function Footer() {
           <p>Strategic digital transformation for the modern enterprise.</p>
         </div>
         <div>
-          <h3>Services</h3>
-          {footerLinks.services.map((link) => (
-            <span key={link}>{link}</span>
-          ))}
+          <h3>Quick Links</h3>
+          <div className="flex gap-2 flex-col">
+
+            {footerLinks.services.map((link) => (
+              <Link className='hover:underline' key={link.href} href={link.href}>
+                {link.title}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <h3>Company</h3>
-          {footerLinks.company.map((link) => (
-            <span key={link}>{link}</span>
-          ))}
+          <div className="flex gap-2 flex-col">
+            {footerLinks.company.map((link) => (
+              <Link target='_blank' key={link.href} href={link.href}>
+                {link.title}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <h3>Contact</h3>
@@ -38,7 +47,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer-bottom">© 2026 {brand.name} Solutions. All rights reserved.</div>
+      <div className="footer-bottom">© {new Date().getFullYear()} {brand.name} Solutions. All rights reserved.</div>
     </footer>
   );
 }

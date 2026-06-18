@@ -72,6 +72,40 @@ export const services = [
 ];
 
 export const footerLinks = {
-  services: ["Digital Strategy", "Custom Software", "Cloud Migration", "AI & Data Analytics"],
-  company: ["About Us", "Careers", "Success Stories", "Privacy Policy"],
+  services: [
+    {
+      title: "Home",
+      href: "/"
+    },
+    {
+      title: "Services",
+      href: "/services"
+    },
+    {
+      title: "Why Choose Us",
+      href: "/why-choose-us"
+    },
+    {
+      title: "Contact Us",
+      href: "/contact-us"
+    }
+  ],
+  company: [
+    {
+      title: "About Us",
+      href: "/about-us"
+    },
+    {
+      title: "Privacy Policy",
+      href: "https://www.termsfeed.com/live/afd74888-64e5-4a03-9a9f-e75205da1cb0"
+    },
+    // {
+    //   title: "Success Stories",
+    //   href: "/success-stories"
+    // },
+    // {
+    //   title: "Privacy Policy",
+    //   href: "/privacy-policy"
+    // }
+  ],
 };
