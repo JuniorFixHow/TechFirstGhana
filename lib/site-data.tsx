@@ -14,7 +14,8 @@ export const brand = {
   whatsapp: "+233 54 109 7145",
   linkedin: 'https://www.linkedin.com/in/tech-first-ghana-59b09441b/',
   tiktok: 'https://www.tiktok.com/@tech.first.ghana?_r=1&_t=ZS-97dkNsdQ3xR',
-  instagram: 'https://www.instagram.com/techfirst_gh?igsh=N2l6c3owdmltc3hh&utm_source=qr'
+  instagram: 'https://www.instagram.com/techfirst_gh?igsh=N2l6c3owdmltc3hh&utm_source=qr',
+  privacy: "https://www.termsfeed.com/live/a95b11aa-0d23-47fa-bbca-50d7f9e07a64"
 };
 
 export const navItems = [
@@ -102,7 +103,7 @@ export const footerLinks = {
     },
     {
       title: "Privacy Policy",
-      href: "https://www.termsfeed.com/live/afd74888-64e5-4a03-9a9f-e75205da1cb0"
+      href: brand.privacy
     },
     // {
     //   title: "Success Stories",
