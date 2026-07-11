@@ -12,9 +12,9 @@ export const brand = {
   phone: "+233 25 773 7537",
   address: "100 Tech Plaza, Accra, Ghana",
   whatsapp: "+233 54 109 7145",
-  linkedin: 'https://www.linkedin.com/in/tech-first-ghana-59b09441b/',
-  tiktok: 'https://www.tiktok.com/@tech.first.ghana?_r=1&_t=ZS-97dkNsdQ3xR',
-  instagram: 'https://www.instagram.com/techfirst_gh?igsh=N2l6c3owdmltc3hh&utm_source=qr',
+  linkedin: 'https://www.linkedin.com/in/teqxa-ghana-59b09441b/?skipRedirect=true',
+  tiktok: 'https://www.tiktok.com/@teqxa0?_r=1&_t=ZS-97wuxj6mo5J',
+  instagram: 'https://www.instagram.com/teqxa_0?igsh=N2l6c3owdmltc3hh&utm_source=qr',
   privacy: "https://www.termsfeed.com/live/a95b11aa-0d23-47fa-bbca-50d7f9e07a64"
 };
 
