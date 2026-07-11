@@ -168,12 +168,12 @@ export const leaders:LeaderType[] = [
     name:'Annan Junior',
     title:'Co-founder & CTO',
     text: "A pioneer in distributed systems and AI, Junior oversees our technical architecture and R&D lab, ensuring we remain at the cutting edge.",
-    image: '/images/test.png'
+    image: '/images/Annan.png'
   },
   {
     name: 'Matilda Baffah',
     title: 'Co-founder & Head of Design',
     text: `With many years in strategic operations, Matilda leads ${brand.name}'s global vision and growth strategy, focusing on sustainable innovation.`,
-    image: '/images/test.png'
+    image: '/images/Matilda.jpg'
   }
 ]
