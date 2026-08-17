@@ -3,7 +3,7 @@ import Expertise from "../sections/Home/Expertise";
 import Landing from "../sections/Home/Landing";
 import Roadmap from "../sections/Home/Roadmap";
 import Scale from "../sections/Home/Scale";
-import Testimonials from "../sections/Home/Testimonials";
+// import Testimonials from "../sections/Home/Testimonials";
 import Trust from "../sections/Home/Trust";
 import WhoWeARe from "../sections/Home/WhoWeARe";
 
@@ -15,7 +15,7 @@ const Home = () => {
         <Expertise />
         <Trust />
         <Roadmap />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Scale />
     </SiteShell>
   )
