@@ -1,11 +1,11 @@
 // lib/sendContactMail.ts
 import { ContactFormPayload } from "@/types/Types"
-import { brand } from "./site-data"
-import { mailTransporter } from "./nodemailer"
+import { brand } from "../site-data"
+import { mailTransporter } from "../nodemailer"
 import { contactEmailTemplate } from "./contactEmail"
 
 
-interface SendMailResult {
+export interface SendMailResult {
   success: boolean
 }
 

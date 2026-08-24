@@ -23,6 +23,7 @@ export const navItems = [
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/why-choose-us", label: "Why Choose Us" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact Us" },
 ];
 

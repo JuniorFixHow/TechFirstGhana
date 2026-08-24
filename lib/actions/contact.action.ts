@@ -1,7 +1,7 @@
 'use server'
 
 import { ContactActionState, ContactFormPayload } from "@/types/Types";
-import { sendContactMail } from "../sendContactMail";
+import { sendContactMail } from "../emails/sendContactMail";
 
 
 export async function sendEmail(

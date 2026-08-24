@@ -35,3 +35,26 @@ export type ContactActionState = {
   message: string;
   success: boolean;
 };
+
+
+export interface CareersFormPayload {
+    _id: string;
+    name: string;
+    email: string;
+    phoneNumber: string;
+    country: string;
+    experience: 'Beginner' | 'Intermediate' | 'Expert';
+    portfolio?: string; //github or blog or personal website or LinkedIn
+    skills?: string[];
+    role: 'Investor' | 'Designer' | 'Developer' | 'Product Manager' | 'Marketer' | 'Sales' | 'Tech Writer' | 'Business Development' | 'Other';
+    compensationPreference: 'Project-profit-sharing' | 'Equity' | 'Both' | 'Open to discussion';
+    reasonForJoining: string;
+    projectsIntrested?: string[];
+}
+
+export interface IResponse {
+    message: string;
+    error: boolean;
+    payload?: object;
+    code?: number;
+}

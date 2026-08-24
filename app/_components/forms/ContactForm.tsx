@@ -19,7 +19,7 @@ const ContactForm = () => {
     
     const handleSubmit = async(e: SubmitEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(data);
+        // console.log(data);
         setIsSubmitting(true);
         try {
             const res = await sendEmail(data as ContactFormPayload);
@@ -78,7 +78,7 @@ const ContactForm = () => {
                     </div>
                 </div>
             </div>
-            <Button text={isSubmitting ? 'Sending Message...' : 'Send Message'} bttype='primary' className='text-lg font-bold w-full md:w-2/3' icon={<GoPaperAirplane color='white' size={16} />} />
+            <Button disabled={isSubmitting} text={isSubmitting ? 'Sending Message...' : 'Send Message'} bttype='primary' className='text-lg font-bold w-full md:w-2/3' icon={<GoPaperAirplane color='white' size={16} />} />
         </div>
     </form>
   )

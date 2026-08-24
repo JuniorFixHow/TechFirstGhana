@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "mongodb": "^7.5.0",
+    "mongoose": "^9.9.3",
     "next": "16.2.10",
     "nodemailer": "^9.0.3",
     "notistack": "^3.0.2",

@@ -13,7 +13,9 @@ const DigitalTransformation = () => {
             <Text text='Your Partner in Digital Transformation' type="verybig" color="white" />
             <Text text='We bridge the gap between complex engineering and strategic business goals, delivering technology solutions that scale with your ambition.' type="lg" color="white" />
             <div className="flex items-center gap-5">
-                <Button text='Schedule Strategic Call' bttype='tertiary' width='fit' />
+                <Link href={'https://calendly.com/dev-teqxa/30min'} target="_blank" rel="noopener noreferrer">
+                    <Button text='Schedule Strategic Call' bttype='tertiary' width='fit' />
+                </Link>
                 <Link href='/#roadmap'>
                     <Button text='View Methodology' bttype='ghost' width='fit' />
                 </Link>
