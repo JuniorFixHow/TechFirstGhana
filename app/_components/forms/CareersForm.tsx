@@ -5,6 +5,7 @@ import { enqueueSnackbar } from "notistack";
 import { KeyboardEvent, SubmitEvent, useRef, useState } from "react";
 import Text from "../ui/Text";
 import Button from "../ui/Button";
+import { brand } from "@/lib/site-data";
 
 type ArrayFieldName = "skills" | "projectsIntrested";
 
@@ -17,6 +18,7 @@ const CareersForm = () => {
         projectsIntrested: [],
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [hasAcceptedTerms, setHasAcceptedTerms] = useState(false);
 
     // Local, not-yet-committed text for the two tag-style inputs.
     const [skillInput, setSkillInput] = useState('');
@@ -216,9 +218,14 @@ const CareersForm = () => {
                                 </div>
                             )}
                         </div>
+
+                        <div className="flex items-start gap-4">
+                            <input type="checkbox" className="mt-1 cursor-pointer" onChange={()=>setHasAcceptedTerms((e)=>!e)} />
+                            <Text type='smm' color='black' text={`I understand and agree that this is an unpaid opportunity and that no salary or guaranteed payment is provided. I understand that any profit sharing or equity arrangement will be subject to a separate agreement with ${brand?.name}.`} />
+                        </div>
                     </div>
                 </div>
-                <Button disabled={isSubmitting} text={isSubmitting ? 'loading...' : 'Proceed'} bttype='primary' className='text-lg font-bold w-full md:w-2/3' />
+                <Button disabled={(isSubmitting || !hasAcceptedTerms)} text={isSubmitting ? 'loading...' : 'Proceed'} bttype={'primary'} className='text-lg mt-6 font-bold w-full md:w-2/3' />
             </div>
         </form>
     )

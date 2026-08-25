@@ -99,6 +99,10 @@ export const footerLinks = {
   ],
   company: [
     {
+      title: "Careers",
+      href: "/careers"
+    },
+    {
       title: "About Us",
       href: "/about"
     },

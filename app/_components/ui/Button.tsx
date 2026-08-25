@@ -17,16 +17,16 @@ export default function Button({icon, bttype, size, width, text, className, ...p
 }
 
 const buttonStyles = tv({
-    base: 'rounded-lg w-fit flex items-center gap-6 hover:cursor-pointer flex items-center justify-center gap-2 transition-colors duration-300',
+    base: 'rounded-lg w-fit flex items-center gap-6 hover:cursor-pointer flex items-center justify-center gap-2 transition-colors duration-300 disabled:cursor-default',
     variants: {
         bttype:{
-            primary: 'bg-[#86367E] text-white hover:bg-[#6B2A66]',
+            primary: 'bg-[#86367E] text-white hover:bg-[#6B2A66] disabled:border-[#C4C6CE] disabled:text-gray-100 disabled:bg-gray-400',
             secondary: 'bg-white text-[#86367E] hover:bg-[#F0F0F0]',
             tertiary: 'bg-white text-[#0B1C30] hover:bg-[#F0F0F0]',
             blue: 'text-white bg-[#0B1C30] hover:bg-[#1B2C40]',
             outlined: 'bg-transparent border border-white text-white hover:bg-[#F0F0F0]',
             ghost: 'bg-transparent border border-[#74777E] text-white hover:bg-[#F0F0F0]',
-            elevated: 'bg-white shadow-sm border border-[#C4C6CE] text-grey-800 hover:bg-[#F0F0F0]',
+            elevated: 'bg-white shadow-sm border border-[#C4C6CE] text-gray-800 hover:bg-[#F0F0F0]',
         },
         size: {
             sm: 'px-4 py-2 text-sm',
