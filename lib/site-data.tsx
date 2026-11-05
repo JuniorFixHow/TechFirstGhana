@@ -10,7 +10,7 @@ export const brand = {
   shortName: "Teqxa",
   email: "contact@teqxa.com",
   phone: "+233 25 773 7537",
-  address: "100 Tech Plaza, Accra, Ghana",
+  address: "Completely remote",
   whatsapp: "+233 54 109 7145",
   linkedin: 'linkedin.com/company/teqxa/',
   tiktok: 'https://www.tiktok.com/@teqxa0?_r=1&_t=ZS-97wuxj6mo5J',
