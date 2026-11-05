@@ -6,7 +6,7 @@ const Expertise = () => {
   return (
     <section id='expertise' className='flex flex-col gap-5 md:gap-8 py-6 md:py-12 px-[10%]' >
         <div className="flex flex-col gap-2">
-            <Text text='Core Expertise' align="center" type="big" color="black" />
+            <Text as='h2' text='Core Expertise' align="center" type="big" color="black" />
             <Text align="center" text='From enterprise software to cloud migrations, we provide the technical foundation for scalable success.' type="base" color="grey" />
         </div>
 

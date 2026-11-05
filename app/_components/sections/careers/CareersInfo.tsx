@@ -7,7 +7,7 @@ const CareersInfo = () => {
         <div className="flex flex-col md:flex-row gap-6 w-full">
             <CareersForm/>
             <div className="hidden md:flex flex-col gap-5 md:flex-2 w-full h-160 md:h-full relative">
-                <Image src='/images/career.png' className='rounded md:rounded-lg' fill alt='Careers Image' />
+                <Image src='/images/career.png' className='rounded md:rounded-lg' fill alt='Join the Teqxa career programme' sizes='(max-width: 768px) 100vw, 50vw' />
             </div>
         </div>
     </section>

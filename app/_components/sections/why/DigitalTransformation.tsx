@@ -10,7 +10,7 @@ const DigitalTransformation = () => {
             <div className="flexcenter bg-white rounded-2xl p-1 w-fit">
                 <Text text='EFFICIENCY REDEFINED' type='smmed' color='red' />
             </div>
-            <Text text='Your Partner in Digital Transformation' type="verybig" color="white" />
+            <Text as='h1' text='Your Partner in Digital Transformation' type="verybig" color="white" />
             <Text text='We bridge the gap between complex engineering and strategic business goals, delivering technology solutions that scale with your ambition.' type="lg" color="white" />
             <div className="flex items-center gap-5">
                 <Link href={'https://calendly.com/dev-teqxa/30min'} target="_blank" rel="noopener noreferrer">
@@ -23,7 +23,7 @@ const DigitalTransformation = () => {
         </div>
         <div className="flex md:flex-1 h-80 md:h-auto w-full flexcenter">
             <div className="flexcenter w-full md:w-4/5 h-full relative">
-                <Image src='/images/WhyChooseUs.png' className='rounded-2xl' fill alt='Why Choose Us Image' />
+                <Image src='/images/WhyChooseUs.png' className='rounded-2xl' fill alt='Teqxa engineers collaborating on a digital transformation project' fetchPriority='high' sizes='(max-width: 768px) 100vw, 50vw' />
             </div>
         </div>
     </section>

@@ -6,7 +6,7 @@ const Precision = () => {
   return (
     <section id='precision' className='flex flex-col md:flex-row items-stretch py-6 md:py-12 gap-5 md:gap-8 px-[10%] bg-[#F8F9FF] w-full' >
         <div className="flex md:flex-1 w-full gap-3 flex-col">
-            <Text type='big' text='Engineered for Precision' />
+            <Text as='h2' type='big' text='Engineered for Precision' />
             <div className="flex flex-col gap-5">
                 <div className="flex gap-3 w-full">
                     <Counter count='1' />
@@ -35,7 +35,7 @@ const Precision = () => {
 
         <div className="flex w-full h-80 md:h-auto md:flex-1 flex-col bg-white rounded-lg md:rounded-2xl p-4 relative shadow-xl gap-5">
             <div className="flex grow  relative">
-                <Image src='/images/Visualization.png' className='rounded-lg md:rounded-2xl'  alt='Precision Image' fill />
+                <Image src='/images/Visualization.png' className='rounded-lg md:rounded-2xl'  alt='Deployment dashboard visualising project status' fill sizes='(max-width: 768px) 100vw, 50vw' />
             </div>
             <div className="flex flex-col bg-[#D3E4FE] rounded p-3">
                 <div className="flex items-center justify-between">

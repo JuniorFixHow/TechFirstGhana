@@ -7,7 +7,7 @@ const CorePillars = () => {
   return (
     <section id='corepillars' className='flex flex-col gap-5 md:gap-8 py-6 md:py-12 px-[10%] bg-white w-full items-center' >
         <div className="flex items-center gap-2 flex-col">
-            <Text align="center" text='Core Pillars' type="big" color="black" />
+            <Text as='h2' align="center" text='Core Pillars' type="big" color="black" />
             <Text align="center" text='The fundamental values that drive every decision we make and every product we build.' type="base" color="grey" />
         </div>
 

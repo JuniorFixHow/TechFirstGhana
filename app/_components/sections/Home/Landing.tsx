@@ -13,8 +13,8 @@ const Landing = () => {
         </div>
         <div className="flex flex-col md:flex-row items-stretch gap-12">
             <div className="flex flex-1 flex-col gap-4 md:gap-6">
-                <Text text='Technology Solutions That Drive Business Growth' type="verybig" />
-                <Text text='Scale your operations with precision-engineered software, cloud infrastructure, and strategic IT consulting designed for the modern enterprise.' type="lg" color='grey' />
+                <Text as='h1' text='Technology Solutions That Drive Business Growth' type="verybig" />
+                <Text as='p' text='Scale your operations with precision-engineered software, cloud infrastructure, and strategic IT consulting designed for the modern enterprise.' type="lg" color='grey' />
                 <div className="flex flex-col gap-3 md:gap-4">
                     <Link href='/services'>
                         <Button text='Get Started' bttype="primary" className='w-fit' />
@@ -26,7 +26,7 @@ const Landing = () => {
             </div>
             <div className="flexcenter flex-1">
                 <div className="flex w-full h-80 md:w-9/10 md:h-9/10 relative">
-                <Image src='/images/Home1.png' className='rounded-2xl' fill  alt='Landing Image' />
+                <Image src='/images/Home1.png' className='rounded-2xl' fill  alt='Teqxa team delivering enterprise technology solutions' fetchPriority='high' sizes='(max-width: 768px) 100vw, 50vw' />
                 </div>
             </div>
         </div>

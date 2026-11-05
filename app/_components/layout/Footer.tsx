@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className='flex p-4 gap-12 flex-col md:py-12 md:px-[10%] bg-[#86367E] text-white items-center' >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full">
             <div className="flex flex-col items-center sm:items-start gap-3">
-                <Image src='/images/logow.png' width={100} height={50} alt='Logo' />
+                <Image src='/images/logow.png' width={100} height={50} alt='Teqxa logo' />
                 <span className="text-base text-center sm:text-start w-4/5">Strategic digital transformation for the modern enterprise.</span>
             </div>
 

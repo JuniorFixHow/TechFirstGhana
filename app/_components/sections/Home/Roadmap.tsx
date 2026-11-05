@@ -6,7 +6,7 @@ const Roadmap = () => {
   return (
     <section id='roadmap' className='flex flex-col gap-5 md:gap-8 bg-white py-6 md:py-12 px-[10%]' >
         <div className="flex gap-2 flex-col w-full items-center">
-            <Text text='Our Strategic Roadmap' type="big" color="black" />
+            <Text as='h2' text='Our Strategic Roadmap' type="big" color="black" />
             <Text text='A systematic approach to transforming your vision into high-performance reality.' type="base" color="grey" />
         </div>
 

@@ -1,16 +1,21 @@
-import React, { ComponentProps } from 'react'
+import React, { HTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge';
 import { tv, VariantProps } from 'tailwind-variants';
 
+// Semantic element to render. Headings (h1, h2, h3) tell search engines
+// how a page is structured; the visual style still comes from `type`.
+type TextElement = 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote';
+
 type TextProps = {
     text: string,
-} & TextVariants & ComponentProps<'span'>;
+    as?: TextElement,
+} & TextVariants & HTMLAttributes<HTMLElement>;
 
-export default function Text({type, color, align, text, className, ...props}: TextProps) {
+export default function Text({type, color, align, text, className, as: Tag = 'span', ...props}: TextProps) {
   return (
-    <span {...props} className={twMerge(textStyles({ type, color, align }), className)}>
+    <Tag {...props} className={twMerge(textStyles({ type, color, align }), className)}>
       {text}
-    </span>
+    </Tag>
   )
 }
 

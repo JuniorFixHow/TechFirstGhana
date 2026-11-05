@@ -10,7 +10,7 @@ const TestimonialItem = ({ item }: TestimonialItemProps) => {
     <div className='bg-white border border-[#C4C6CE] rounded-lg p-5 w-full flex flex-col gap-4' >
         <Text text={item?.text} type='base' color='grey' className='italic' />
         <div className="flex items-center gap-4">
-            <Image src='/images/test.png' className='rounded-full' width={50} height={50} alt='Testimonial' />
+            <Image src='/images/test.png' className='rounded-full' width={50} height={50} alt={`${item?.name}, ${item?.title}`} />
             <div className="flex flex-col">
                 <span className='text-[#000F22] text-base font-bold'>{item?.name}</span>
                 <Text text={item?.title} type='sm' color='grey' />

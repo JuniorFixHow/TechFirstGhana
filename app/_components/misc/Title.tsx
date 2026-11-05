@@ -9,7 +9,7 @@ type TitleProps = {
 const Title = ({ title, desc, className, ...props }: TitleProps) => {
   return (
     <div className={twMerge("flex flex-col gap-2 items-center", className)} {...props}>
-        <Text align="center" text={title} type="big" color="black" />
+        <Text as="h2" align="center" text={title} type="big" color="black" />
         {
           desc &&
         <Text align="center" text={desc} type="base" color="grey" />

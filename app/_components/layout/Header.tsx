@@ -15,14 +15,14 @@ const Header = ({ activePath }: HeaderProps) => {
     const [open, setOpen] = useState(false);
   return (
     <header className='bg-white flex flex-row items-center justify-between md:justify-around py-2.5 md:py-4 border-b border-b-gray-100 px-[10%] w-full' >
-        <Link href='/'>
-            <Image src='/images/logo.png' width={100} height={50} alt='Logo' />
+        <Link href='/' aria-label='Teqxa home'>
+            <Image src='/images/logo.png' width={100} height={50} alt='Teqxa logo' loading='eager' />
         </Link>
         <IoMenu onClick={()=>setOpen(true)} color='86367E' size={24} className='cursor-pointer md:hidden' />
         {
             open && <MobileMenu activePath={activePath} open={open} setOpen={setOpen} />
         }
-        <nav className='hidden md:flex items-center justify-center flex-1 gap-8' >
+        <nav aria-label='Main navigation' className='hidden md:flex items-center justify-center flex-1 gap-8' >
             <div className="flex items-center gap-6">
                 {
                     navItems.map((item, index) => (

@@ -12,7 +12,7 @@ const GetInTouch = () => {
   return (
     <section id='getintouch' className='flex flex-col gap-6 md:gap-10 py-6 md:py-12 w-full px-[10%] bg-[#F8F9FF]' >
         <div className="flex flex-col gap-3 w-full md:w-2/3">
-            <Text type='verybig' color='black' text='Get in Touch' />
+            <Text as='h1' type='verybig' color='black' text='Get in Touch' />
             <Text type='lg' color='grey' text="Ready to accelerate your strategic precision? Reach out to our global team for customized technology solutions." />
         </div>
 
@@ -20,7 +20,7 @@ const GetInTouch = () => {
             <ContactForm />
             <div className="flex flex-col gap-5 flex-2">
                 <div className="flex flex-col gap-6 p-6 md:p-10 bg-[#0A2540] rounded-lg">
-                    <Text type='heavytext' color='white' text='Global Support Network' />
+                    <Text as='h2' type='heavytext' color='white' text='Global Support Network' />
                     <div className="flex gap-4 flex-col">
                         <div className="flexcenter w-full h-40 md:h-60 rounded-lg bg-[url('/images/map.png')] brightness-50 bg-no-repeat">
                             <div className="flexcenter p-2 rounded-full bg-[#86367E]">

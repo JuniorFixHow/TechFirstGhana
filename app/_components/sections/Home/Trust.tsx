@@ -8,7 +8,7 @@ const Trust = () => {
   return (
     <section id='trust' className='flex flex-col items-center md:flex-row gap-5 md:gap-8 py-6 md:py-12 px-[10%] bg-[#86367E]'>
         <div className="flex flex-1 flex-col gap-6">
-            <Text text={`Why Leading Companies Trust ${brand.name}`} type="big" color="white" />
+            <Text as='h2' text={`Why Leading Companies Trust ${brand.name}`} type="big" color="white" />
             <Text text={`We bring a unique blend of corporate discipline and startup agility to every project, ensuring your tech stack is an asset, not a liability.`} type="base" color="white" />
             <div className="flex flex-col md:flex-row gap-5">
                 <div className="flex flex-col gap-1">

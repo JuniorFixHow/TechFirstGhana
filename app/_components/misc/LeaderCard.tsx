@@ -8,9 +8,9 @@ type LeaderCardProps = {
 const LeaderCard = ({ item }: LeaderCardProps) => {
   return (
     <div className='flex items-center w-full p-5 gap-5 bg-white border border-[#E2E8F0] rounded-xl' >
-        <Image src={item.image} className='rounded-xl' width={100} height={200} alt={item.name} />
+        <Image src={item.image} className='rounded-xl' width={100} height={200} alt={`${item.name}, ${item.title} at Teqxa`} />
         <div className="flex flex-col gap-2">
-            <Text text={item.name} type="heavytext" color="black" />
+            <Text as="h3" text={item.name} type="heavytext" color="black" />
             <Text text={item.title} type="base" color="red" />
             <Text text={item.text} type="base" color="grey" />
         </div>

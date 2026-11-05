@@ -20,7 +20,7 @@ const ServicePillars = () => {
                 <ServiceCard className='flex-3' >
                     <div className="flex gap-2 items-center">
                         <Iconer className='bg-[#86367E]' icon={<IoMdCode size={16} color='white' />} />
-                        <Text text='Software & Web Development' type='heavytext' color='black' />
+                        <Text as='h2' text='Software & Web Development' type='heavytext' color='black' />
                     </div>
 
                     <Text type='base' color='grey' text="We craft robust, high-performance web applications and custom software architectures. Utilizing modern stacks and agile methodologies, we deliver solutions that are secure, scalable, and optimized for speed." />
@@ -38,7 +38,7 @@ const ServicePillars = () => {
                 <ServiceCard className='flex-2 bg-[#86367E] gap-4 md:gap-5' >
                     <div className="flex gap-2 items-center">
                         <Iconer  icon={<RiExchange2Line size={16} />} />
-                        <Text text='IT Consulting' type='heavytext' color='white' />
+                        <Text as='h2' text='IT Consulting' type='heavytext' color='white' />
                     </div>
 
                     <Text type='base' color='white' text="Strategic roadmap planning and infrastructure auditing to align your technology stack with your business's long-term growth objectives." />
@@ -68,7 +68,7 @@ const ServicePillars = () => {
                 <ServiceCard className='flex-2 border-[#0762FF]' >
                     <div className="flex gap-2 items-center">
                         <Iconer  icon={<IoMdCode size={16} color='#86367E' />} />
-                        <Text text='Microsoft 365 & Cloud' type='heavytext' color='black' />
+                        <Text as='h2' text='Microsoft 365 & Cloud' type='heavytext' color='black' />
                     </div>
 
                     <Text type='base' color='grey' text="Complete ecosystem integration. We specialize in Azure migration, Microsoft 365 optimization, and hybrid cloud management for secure remote collaboration." />
@@ -89,12 +89,12 @@ const ServicePillars = () => {
                         <div className="flex flex-1 flex-col gap-4">
                             <div className="flex gap-2 items-stretch">
                                 <Iconer className='h-auto bg-[#86367E]' icon={<HiMiniDevicePhoneMobile color='white' size={16} />} />
-                                <Text text='Mobile App Devlopment' type='heavytext' color='black' />
+                                <Text as='h2' text='Mobile App Development' type='heavytext' color='black' />
                             </div>
                             <Text type='base' color='black' text="Native and cross-platform mobile experiences that engage users. From iOS to Android, we focus on intuitive UX and high-performance execution." />
                         </div>
                         <div className="flex flex-1 relative h-auto">
-                            <Image src='/images/MobileDevelopmentInterface.png' className='rounded-md md:rounded-xl' fill alt='Mobile App Image' />
+                            <Image src='/images/MobileDevelopmentInterface.png' className='rounded-md md:rounded-xl' fill alt='Mobile app interface designed by Teqxa' sizes='(max-width: 768px) 100vw, 50vw' />
                         </div>
                     </div>
 
